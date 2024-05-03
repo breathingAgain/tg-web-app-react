@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../Button/Button';
 import { useTelegram } from '../../hooks/useTelegram';
 import './Header.css';
+import { TonConnectButton } from '@tonconnect/ui-react';
 
 const Header = () => {
 
@@ -13,6 +14,7 @@ const Header = () => {
             <span className={'username'}>
                 {user}
             </span>
+            <TonConnectButton className="my-button-class" style={{ float: "right" }}/>
         </div>
     );
 };
