@@ -6,7 +6,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react';
 
 function App() {
   
-  const {onToggleButton, tg} = useTelegram();
+  const { tg } = useTelegram();
 
   useEffect(() => {
     tg.ready();
