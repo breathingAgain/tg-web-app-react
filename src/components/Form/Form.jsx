@@ -14,7 +14,7 @@ const Form = () => {
         tg.MainButton.setParams( {
             text: 'Отправить'
         })
-    }, [])
+    }, [tg])
 
     useEffect( () => {
         if (!url){
