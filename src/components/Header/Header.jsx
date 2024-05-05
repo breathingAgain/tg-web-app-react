@@ -6,7 +6,7 @@ import { TonConnectButton } from '@tonconnect/ui-react';
 
 const Header = () => {
 
-    const {user, onClose} = useTelegram();
+    const {onClose} = useTelegram();
 
     return (
         <div className={'header'}>
