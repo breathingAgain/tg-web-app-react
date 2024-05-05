@@ -19,7 +19,7 @@ function App() {
       { 
         <div className="App">
           <Header/>
-          <Form/>
+          <Form/> 
         </div> 
       }
     </TonConnectUIProvider>
