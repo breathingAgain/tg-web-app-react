@@ -12,9 +12,6 @@ const Header = () => {
         <div className={'header'}>
             <Button onClick={onClose}>Закрыть приложение</Button>
             <span>TelegramTrack</span>
-            <span className={'username'}>
-                {user}
-            </span>
             <TonConnectButton className="my-button-class" style={{ float: "right" }}/>
         </div>
     );
