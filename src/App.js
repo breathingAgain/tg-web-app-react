@@ -3,6 +3,7 @@ import './App.css';
 import { useTelegram } from './hooks/useTelegram';
 import  Header  from './components/Header/Header';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
+import  Form  from './components/Form/Form';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       { 
         <div className="App">
           <Header/>
+          <Form/>
         </div> 
       }
     </TonConnectUIProvider>
