@@ -18,7 +18,7 @@ const Form = () => {
         return () => {
             tg.WebApp.offEvent('mainButtonClicked', onSendData)
         }
-    }, [onSendData])
+    }, [onSendData, tg])
 
     const onChangeUrl = (e) => {
         setUrl(e.target.value);
