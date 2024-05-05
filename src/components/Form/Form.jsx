@@ -22,7 +22,7 @@ const Form = () => {
         } else {
             tg.MainButton.show()
         }
-    }, [url])
+    }, [url, tg])
 
     return (
         <div>
