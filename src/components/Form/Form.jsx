@@ -3,15 +3,15 @@ import './Form.css';
 import { useTelegram } from '../../hooks/useTelegram';
 
 const Form = () => {
-    const [url, setUrl] = useState('');
+    const [url_tg, setUrl] = useState('');
     const {tg} = useTelegram();
 
     const onSendData = useCallback( () => {
         const data = {
-            url
+            url_tg
         }
         tg.sendData(JSON.stringify(data));
-    }, [url, tg])
+    }, [url_tg, tg])
 
     useEffect( () => {
         tg.onEvent('mainButtonClicked', onSendData)
@@ -31,12 +31,12 @@ const Form = () => {
     }, [tg])
 
     useEffect( () => {
-        if (!url){
+        if (!url_tg){
             tg.MainButton.hide()
         } else {
             tg.MainButton.show()
         }
-    }, [url, tg])
+    }, [url_tg, tg])
 
     return (
         <div>
@@ -45,7 +45,7 @@ const Form = () => {
                 <label>Ссылка на канал</label>
                 <input 
                     type="text" 
-                    value={url}
+                    value={url_tg}
                     onChange={onChangeUrl}
                 />
             </div>
